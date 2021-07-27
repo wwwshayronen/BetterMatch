@@ -1,0 +1,19 @@
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/users/5f2837add9a0cb4f88f78a61
+
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "budget": "500"
+}
+
+###
+
+DELETE http://localhost:3000/users/5f2837dbd9a0cb4f88f78a63

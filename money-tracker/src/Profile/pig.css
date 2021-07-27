@@ -1,0 +1,126 @@
+
+.pig-face {
+    position: relative;
+    top: 200px;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background: #f7949a;
+    border-radius: 50%;
+  }
+  
+  .nose {
+    position: relative;
+    margin: auto;
+    top: 70px;
+    height: 60px;
+    width: 70px;
+    border-radius: 50%;
+    background: #f0c3c6;
+  }
+  
+  .eyes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .eye {
+    position: relative;
+    top: 55px;
+    height: 25px;
+    width: 25px;
+    margin: 4px;
+    border-radius: 60%;
+    background: white;
+    -webkit-animation: blink 3s infinite;
+  }
+  
+  .pupils {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .pupil {
+    position: relative;
+    top: 77px;
+    right: 8px;
+    height: 5px;
+    width: 5px;
+    margin: 4px;
+    border-radius: 50%;
+    background: black;
+    z-index: 1;
+    -webkit-animation: blink 3s infinite;
+  }
+  
+  .second-pupil {
+    position: relative;
+    top: 77px;
+    left: 9px;
+    height: 5px;
+    width: 5px;
+    margin: 4px;
+    border-radius: 50%;
+    background: black;
+    z-index: 1;
+    -webkit-animation: blink 3s infinite;
+  }
+  
+  .nostrils {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nostril {
+    position: relative;
+    top: 25px;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 50%;
+    background: #ce666d;
+  }
+  
+  .ear-right {
+    position: relative;
+    bottom: 157px;
+    right: 60px;
+    border-radius: 0 55px 0 30px;
+    background: #f0c3c6;
+    height: 50px;
+    width: 50px;
+    border: 7px solid #f7949a;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  
+  .ear-left {
+    position: relative;
+    bottom: 203px;
+    left: 60px;
+    border-radius: 0 55px 0px 30px;
+    background: #f0c3c6;
+    height: 50px;
+    width: 50px;
+    border: 7px solid #f7949a;
+    box-sizing: border-box;
+    transform: rotate(92deg);
+    margin: auto;
+  }
+  
+  @-webkit-keyframes blink {
+    0%,
+    100% {
+      transform: scale(1, 0.05);
+    }
+    5%,
+    95% {
+      transform: scale(1, 1);
+    }
+  }
+  

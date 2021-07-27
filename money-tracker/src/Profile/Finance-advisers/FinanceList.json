@@ -1,0 +1,32 @@
+[{
+    "Real-estate": {
+        "adviser_name": "Israel Israeli",
+        "adviser_description": "Hello every one and nice to meet. Ready for great real-estate investment? let me help you with that, contact me.",
+        "adviser_location": "Israel, Tel-Aviv",
+        "adviser_profession": "Real-estate"
+    },
+    "Business": {
+        "adviser_name": "Michael Michaeli",
+        "adviser_description": "Hello every one and nice to meet. Ready for rise up your business? let me help you with that, contact me.",
+        "adviser_location": "Israel, Haifa",
+        "adviser_profession": "Business's"
+    },
+    "Investments": {
+        "adviser_name": "Daniela Danieli",
+        "adviser_description": "Hello every one and nice to meet. Look for good investment's? let me help you with that, contact me.",
+        "adviser_location": "Israel, Haifa",
+        "adviser_profession": "Investments"
+    },
+    "Pension": {
+        "adviser_name": "Norit Levi",
+        "adviser_description": "Hello every one and nice to meet. Look for good investment's? let me help you with that, contact me.",
+        "adviser_location": "Israel, Haifa",
+        "adviser_profession": "Pension"
+    },
+    "CPA": {
+        "adviser_name": "Daniela Danieli",
+        "adviser_description": "Hello every one and nice to meet. Look for good investment's? let me help you with that, contact me.",
+        "adviser_location": "Israel, Haifa",
+        "adviser_profession": "CPA (accounts)"
+    }
+}]

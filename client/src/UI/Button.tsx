@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
-import { theme } from "./colors";
+import { platte } from "./theme";
 export interface ButtonProps {
   children: string;
 }
@@ -12,7 +12,8 @@ const Button: React.FC<ButtonProps> = ({ children }) => {
 export default Button;
 
 const StyledButton = styled.button`
-  background-color: ${theme.primary};
+  background-color: ${platte.colors.buttonPrimary};
+  color: ${platte.colors.textLight};
   border-radius: 4px;
   border: none;
   padding: 8px 16px;
@@ -21,4 +22,10 @@ const StyledButton = styled.button`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   border-radius: 999px;
+  z-index: 0;
+  &:hover {
+    background-color: ${platte.colors.buttonPrimaryHover};
+    color: ${platte.colors.black};
+    transition: 0.7s;
+  }
 `;

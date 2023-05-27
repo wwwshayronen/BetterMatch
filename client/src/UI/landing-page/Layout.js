@@ -14,7 +14,9 @@ const AppLayout = ({ children }) => (
   <Layout>
     <Header
       style={{
-        height: "100px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <div
@@ -24,55 +26,35 @@ const AppLayout = ({ children }) => (
         }}
       >
         <LogoText>BetterMatch</LogoText>
-        <Menu
-          style={{
-            //   float: "right",
-            // replace float
-            display: "flex",
-            justifyContent: "space-between",
-            width: "300px",
-            marginLeft: "auto",
-            marginBottom: "auto",
-            lineHeight: "100px",
-          }}
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={["2"]}
-        >
-          <Menu.Item key="2">About</Menu.Item>
-          <Menu.Item key="3">Contact</Menu.Item>
-          <Menu.Item key="3">Login</Menu.Item>
-        </Menu>
+        <ul></ul>
       </div>
     </Header>
-    <Content style={{ padding: "0 0", marginTop: "0" }}>
-      <div className="site-layout-content">
-        <SecondHeader backgroundImageUri={IMG_URI}>
-          <Wrapper>
-            <Title
-              style={{
-                fontSize: "3em",
-                fontWeight: "bold",
-                color: "white",
-              }}
-            >
-              Your players are waiting for you
-            </Title>
-            <Paragraph
-              style={{
-                fontSize: "1.5em",
-                fontWeight: "bold",
-                color: "white",
-              }}
-            >
-              Introducing your revolutionary soccer platform, powered by
-              cutting-edge AI technology, designed to seamlessly match players
-              with their ideal teams.
-            </Paragraph>
-            <Button>GET STARTED</Button>
-          </Wrapper>
-        </SecondHeader>
-      </div>
+    <Content style={{}}>
+      <SecondHeader backgroundImageUri={IMG_URI}>
+        <Wrapper>
+          <Title
+            style={{
+              fontSize: "3em",
+              fontWeight: "bold",
+              color: "white",
+            }}
+          >
+            Your players are waiting for you
+          </Title>
+          <Paragraph
+            style={{
+              fontSize: "1.5em",
+              fontWeight: "bold",
+              color: "white",
+            }}
+          >
+            Introducing your revolutionary soccer platform, powered by
+            cutting-edge AI technology, designed to seamlessly match players
+            with their ideal teams.
+          </Paragraph>
+          <Button>GET STARTED</Button>
+        </Wrapper>
+      </SecondHeader>
     </Content>
     <Footer style={{ textAlign: "center" }}>
       Ant Design ©2018 Created by Ant UED
@@ -80,11 +62,8 @@ const AppLayout = ({ children }) => (
   </Layout>
 );
 
-const LogoText = styled.h3`
-  height: 60px;
-  width: 180px;
-  margin: 16px;
-  font-size: 2em;
+const LogoText = styled.h5`
+  font-size: 1.5em;
   color: white;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
@@ -94,8 +73,6 @@ const LogoText = styled.h3`
 const SecondHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-left: auto;
-  margin-bottom: auto;
   background-color: #001529;
   height: auto;
   min-height: 500px;
@@ -106,17 +83,13 @@ const SecondHeader = styled.div`
 `;
 
 const Wrapper = styled.div`
-  margin: 0 auto;
-  width: 35%;
+  width: 100%;
   padding: 10px;
   text-align: center;
   color: white;
   font-family: "Roboto", sans-serif;
   font-style: italic;
   text-align: left;
-  // position it to the left
-  position: relative;
-  right: 20%;
 `;
 
 const SubHeaderTitle = styled.h1`

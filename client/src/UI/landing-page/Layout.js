@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { Breadcrumb, Layout, Menu } from "antd";
+import { Breadcrumb, Layout } from "antd";
 import BTRmatchLogo from "./BTRmatchLogo.png";
 import Paragraph from "antd/es/typography/Paragraph";
 import Title from "antd/es/typography/Title";
 import Button from "../Button.tsx";
+import BurgerMenu from "../Menu.tsx";
 const { Header, Content, Footer } = Layout;
 
 const IMG_URI =
@@ -26,7 +27,6 @@ const AppLayout = ({ children }) => (
         }}
       >
         <LogoText>BetterMatch</LogoText>
-        <ul></ul>
       </div>
     </Header>
     <Content style={{}}>
@@ -48,6 +48,12 @@ const AppLayout = ({ children }) => (
               color: "white",
             }}
           >
+            <BurgerMenu
+              open={() => console.log("opened")}
+              onClose={() => console.log("closed")}
+            >
+              child
+            </BurgerMenu>
             Introducing your revolutionary soccer platform, powered by
             cutting-edge AI technology, designed to seamlessly match players
             with their ideal teams.
